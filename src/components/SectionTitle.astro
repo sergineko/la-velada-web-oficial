@@ -1,0 +1,23 @@
+---
+interface Props {
+  class?: string
+  title: string
+  /** `dark`: texto claro para fondos midnight / negro (p. ej. home). */
+  variant?: 'default' | 'dark'
+}
+
+const { class: className, title, variant = 'default' } = Astro.props
+const isDark = variant === 'dark'
+---
+
+<h2
+  class:list={[
+    'mb-4 text-center text-4xl font-light',
+    isDark ? 'text-theme-cream' : 'text-theme-navy',
+    className,
+  ]}
+>
+  <div class="block sm:inline">
+    <strong class:list={['font-bold lowercase', isDark && 'text-theme-gold']}>{title}</strong>
+  </div>
+</h2>

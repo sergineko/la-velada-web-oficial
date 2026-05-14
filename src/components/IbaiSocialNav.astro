@@ -1,0 +1,68 @@
+---
+/**
+ * Enlaces a las redes oficiales de Ibai Llanos (Twitch, TikTok, YouTube).
+ */
+const linkClass =
+  'group flex shrink-0 items-center gap-3 rounded-md px-4 py-3 transition-all duration-300 ease-out sm:gap-3.5 sm:px-5 sm:py-3.5 md:gap-4 md:px-6 md:py-4'
+const linkHover =
+  'hover:scale-[1.05] hover:text-theme-cream hover:drop-shadow-[0_0_20px_rgba(199,168,107,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-theme-gold/55 focus-visible:ring-offset-2 focus-visible:ring-offset-theme-midnight active:scale-[0.98]'
+---
+
+<nav
+  class="mx-auto flex w-full max-w-3xl flex-wrap items-center justify-center gap-x-10 gap-y-6 sm:max-w-4xl sm:gap-x-14 md:gap-x-16"
+  aria-label="Redes sociales de Ibai Llanos"
+>
+  <a
+    href="https://twitch.tv/ibai"
+    target="_blank"
+    rel="noopener noreferrer"
+    class:list={[linkClass, linkHover]}
+    aria-label="Seguir a Ibai en Twitch"
+  >
+    <svg
+      class="size-7 text-[#a970ff] transition-all duration-300 group-hover:scale-110 group-hover:text-[#d4b8ff] sm:size-8 md:size-9"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"></path>
+    </svg>
+    <span class="font-cinzel text-sm font-semibold tracking-wider text-white transition-colors duration-300 group-hover:text-theme-cream sm:text-base md:text-lg">/IBAI</span>
+  </a>
+
+  <a
+    href="https://tiktok.com/@ibaillanos"
+    target="_blank"
+    rel="noopener noreferrer"
+    class:list={[linkClass, linkHover]}
+    aria-label="Seguir a Ibai Llanos en TikTok"
+  >
+    <svg
+      class="size-7 text-white transition-all duration-300 group-hover:scale-110 sm:size-8 md:size-9"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.78a8.28 8.28 0 0 0 4.82 1.54V6.87a4.84 4.84 0 0 1-1.06-.18z"></path>
+    </svg>
+    <span class="font-cinzel text-sm font-semibold tracking-wider text-white transition-colors duration-300 group-hover:text-theme-cream sm:text-base md:text-lg">/IBAILLANOS</span>
+  </a>
+
+  <a
+    href="https://youtube.com/@IbaiLlanos"
+    target="_blank"
+    rel="noopener noreferrer"
+    class:list={[linkClass, linkHover]}
+    aria-label="Seguir a Ibai Llanos en YouTube"
+  >
+    <svg
+      class="size-7 text-[#ff0000] transition-all duration-300 group-hover:scale-110 group-hover:text-[#ff4d4d] sm:size-8 md:size-9"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+    </svg>
+    <span class="font-cinzel text-sm font-semibold tracking-wider text-white transition-colors duration-300 group-hover:text-theme-cream sm:text-base md:text-lg">/IBAILLANOS</span>
+  </a>
+</nav>
